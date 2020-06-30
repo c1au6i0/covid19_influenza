@@ -6,8 +6,7 @@
 This repository contains the scripts used to analyzed the data reported
 in the paper:
 
-*Influenza Vaccination and COVID19 Mortality: Cross-sectional Trends
-from Italy and USA* 
+*Influenza Vaccination and COVID-19 Mortality in the USA* 
 
 Claudio Zanettini\*, Mohamed Omar\*, Wikum Dinalankara, Eddie Luidy
 Imada, Elizabeth Colantuoni, Giovanni Parmigiani, and Luigi Marchionni.
