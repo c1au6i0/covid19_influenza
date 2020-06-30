@@ -204,7 +204,7 @@ get_PPScore <- function(
 #'
 #' @param dat dataframe
 #' @param filt_cases numeric vector of thresholds of cases X county  (default = 1)
-#' @param form  formula to use for propensity score, this is a `reformulate` expression
+#' @param form_ps  formula to use for propensity score, this is a `reformulate` expression
 #' @param offset_f the offset, es "log(NC_cases)"
 #' @param var_dep dependent variable, es. "YY_death"
 #' @param var_int indipendent variable, es ZZ_perc_imm65"
@@ -230,6 +230,7 @@ glm_pp <- function(dat,
                    quint = FALSE,
                    inter = "no",
                    other_a  = "FALSE",
+                   form_ps = form_ps,
                    ...) {
   
   
@@ -250,7 +251,7 @@ glm_pp <- function(dat,
             data,
             filt_cases_c,
             get_PPScore,
-            form = form_ps,
+            form = !!form_ps,
             offset_f = !!offset_f,
             var_int = !!var_int,
             var_dep = !!var_dep,
